@@ -1,0 +1,840 @@
+/* ~~~~~~~~~~ GLOBAL STYLES ~~~~~~~~~~ */
+
+/* video styling */
+video {
+  display: block;
+  margin-top: 0;
+}
+/* Horizontal rule */
+hr {
+  width: 40%;
+}
+
+/* Headings styles*/
+h1 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: lighter;
+  text-decoration: underline;
+  color: white;
+  background-color: rgba(241, 241, 241, 0.925);
+}
+h2 {
+  color: rgb(136, 145, 145);
+  font-size: 20px;
+  line-height: 120%;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: 20px;
+  line-height: 120%;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  background-color: white;
+}
+
+a:visited {
+  color: purple;
+}
+
+/* Footer style */
+footer {
+  text-align: center;
+}
+
+/* Remove non-printable elements */
+@media print {
+  .nav-bar {
+    display: none;
+  }
+  .footer-class {
+    display: none;
+  }
+  body {
+    background-color: transparent;
+    font-size: 24px;
+  }
+}
+
+/* ~~~~~~~~~~ NAVIGATION BAR ~~~~~~~~~~~ */
+
+/* - this specifies the navigation container to show the unordered list horizontally ALL PAGES */
+
+/* Nav Bar & Button Styles */
+.nav-bar {
+  position: relative;
+}
+
+.nav-bar nav {
+  background-color: rgb(254, 254, 254);
+  position: fixed;
+  top: 0;
+  width: calc(100% - 20px);
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar nav ul li {
+  display: inline-block;
+}
+
+.nav-bar nav ul.left-buttons {
+  float: left;
+}
+
+.nav-bar nav ul.right-buttons {
+  float: right;
+}
+
+.nav-bar nav ul li a {
+  display: inline-block;
+  height: 100%;
+  line-height: 45px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0 20px;
+  background-color: black;
+  border: 1px solid rgb(145, 144, 148);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-bar nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* right buttons */
+
+ul.right-buttons {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  list-style-type: none;
+}
+
+/* ~~~~~~~~~~ HOME PAGE ~~~~~~~~~~ */
+
+/* Styls for the home page */
+.relative-title {
+  top: 0;
+  padding-top: 17px;
+  background-color: #f1f1f1;
+}
+
+/* container holding right and left sides on the Home Page (not including the quote)*/
+.main-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-right: 20px;
+  font-size: 20px;
+  position: relative;
+}
+.grey-background {
+  background-color: #f1f1f1;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -3;
+}
+
+/*section for profile pic on Home Page*/
+.left {
+  background-color: transparent;
+  margin-right: 20px;
+  display: inline-flex;
+  text-align: center;
+  width: 35%;
+  margin-top: 100px;
+  z-index: -2;
+}
+
+.left img {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* Section for intro text on Home Page*/
+.right {
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 50px;
+  width: 45%;
+  text-align: justify;
+  z-index: -1;
+}
+
+/*text highlighting*/
+.highlight {
+  color: rgb(4, 4, 4);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Contaner on Home Page containing the Quote and image */
+#quote-contaner {
+  text-align: center;
+  padding: 50px;
+}
+
+#quote {
+  font-style: italic;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.underline {
+  text-decoration: underline;
+}
+
+/* Name of the person who said the quote */
+#name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: right;
+  margin-right: 450px;
+}
+
+/* Phone & Email on Home Page*/
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.details-container {
+  text-align: center;
+  padding: 10px;
+  margin: 20px auto;
+  border: 2px solid darkgrey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+/*personal logo*/
+
+.personal-logo {
+  transform: scale(0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 10px;
+}
+.copyright {
+  color: rgb(13, 12, 12);
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ~~~~~~~~~~ RESUME PAGE ~~~~~~~~~~ */
+/* styles for the resume page */
+.resume_page body {
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.resume_page h2 {
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/*Title Style */
+.resume-title {
+  text-align: center;
+  margin-top: 52px;
+}
+
+/* Resume Header Style */
+.resume-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.resume-header p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Div Style*/
+
+.whole-resume {
+  width: 70%;
+  margin: 0 auto;
+}
+/* Fuctional Expertise Styling */
+.functional-expertise {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.functional-expertise ul {
+  list-style-type: square;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.functional-expertise ul li {
+  margin-top: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: calc(43% - 20px);
+}
+
+.functional-expertise ul li p {
+  margin: 0;
+  text-align: left;
+}
+
+/* Job Description style */
+.job-desc {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.job-desc table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.job-desc th,
+.job-desc td {
+  border: 0;
+  padding: 8px;
+}
+
+.job-desc th {
+  background-color: lightgray;
+}
+
+/* Education Table Style */
+.education {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.education-table {
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.education th,
+.education td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.education th {
+  background-color: lightgrey;
+}
+.education-table td {
+  text-align: left;
+}
+
+.knowledge {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.knowledge ul {
+  list-style-type: none;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.knowledge ul li {
+  margin-bottom: 10px;
+  text-align: center;
+  padding-left: 0;
+  display: inline-block;
+}
+
+/* heading style */
+div.webskills-heading {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.webskills-heading h1.wsheader {
+  background-color: white;
+}
+
+.wsheader {
+  padding-top: 20px;
+  color: darkgrey;
+}
+
+/*main container*/
+.skills-div {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* List of skills */
+.skillslist {
+  list-style-type: lower-roman;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skillslist > li {
+  width: calc(30% - 10px);
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skillslist > li > ol {
+  list-style-type: lower-roman;
+  padding-left: 0;
+}
+
+.skillslist > li > ol > li {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* ~~~~~~~~~~ ABOUT PAGE ~~~~~~~~~~ */
+/* styles for the about me page */
+.about-header {
+  margin-top: 55px;
+  text-align: center;
+}
+
+/* Picture table */
+.pic-grid {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 35px;
+  overflow: hidden;
+}
+
+.picture-grid {
+  border-collapse: collapse;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.picture-grid td {
+  padding: 5px;
+}
+
+.picture-grid img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+  width: auto;
+}
+
+/* About me paragraph*/
+.about-paragraph {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+/* Hobbies list */
+#ul-hobbies-container {
+  text-align: left;
+  margin: 0 auto;
+  width: 80%;
+}
+#hobbies-heading {
+  color: darkgreen;
+  text-decoration: underline;
+  font-size: 24px;
+}
+#ul-hobbies-container ul {
+  padding-left: 0;
+}
+
+#ul-hobbies-container li {
+  margin: 10px 0;
+  position: relative;
+  list-style-type: square;
+}
+
+#ul-hobbies-container li span {
+  color: blue;
+  text-decoration: underline;
+  display: inline;
+}
+
+/* ~~~~~~~~~~  WEB DEV / SKILLS PAGE 1 ~~~~~~~~~ */
+/* Body styles */
+.skill-one {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* video style */
+#background_video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo1 {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+}
+/* newsletter button */
+.link-button a {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.link-button a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* blog links an images*/
+
+.blog {
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.column-group {
+  display: inline-block;
+}
+
+.column {
+  display: inline-block;
+  width: 30%;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.column img {
+  display: block;
+  width: 95%;
+  height: auto;
+}
+
+/* ~~~~~~~~~~ NEWSLETTER SIGN UP PAGE ~~~~~~~~~~ */
+/* styles for the newsletter  */
+
+.quarry_background {
+  background-image: url("../IMAGES/quarrybackground.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* form for signup */
+.form_background {
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: auto;
+}
+
+.left-side-form {
+  width: 60%;
+  padding-top: 150px;
+}
+
+.right-side-form {
+  width: 35%;
+}
+
+.form-image img {
+  width: 100%;
+}
+
+.textarea {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form-text {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.green_thumb_logo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.news-heading {
+  font-size: 30px;
+  color: #0a6b71;
+  margin-bottom: 30px;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* input fields foe name and email */
+
+form input.first-name-input {
+  border: none !important;
+  outline: none !important;
+  border-bottom: 2px solid #0a6b71 !important;
+  width: 50%;
+  margin-bottom: 20px;
+}
+form input.lastname-input {
+  border: none !important;
+  outline: none !important;
+  border-bottom: 2px solid #0a6b71 !important;
+  width: 50%;
+  margin-bottom: 20px;
+}
+form input.email-input {
+  border: none !important;
+  outline: none !important;
+  border-bottom: 2px solid #0a6b71 !important;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+/* buttons for selecting age group */
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonsContainer button[type="button"] {
+  width: 100px;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  background-color: #0a6b71;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border-bottom-color 0.25s;
+}
+
+#signupButton {
+  padding-right: 15px;
+}
+
+#signupButton:hover {
+  background-color: black;
+}
+
+.radio-buttons {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.radio-label {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.radio-style {
+  display: none;
+}
+
+.radio-label::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 2px solid #0a6b71;
+  vertical-align: middle;
+}
+
+.radio-style:checked + .radio-label::before {
+  background-color: #007bff;
+  border-color: black;
+}
+
+/* styles for checkbox list  */
+.checkboxes {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletterOptions {
+  color: #0a6b71;
+  font-size: 16px;
+}
+
+.checkboxes input[type="checkbox"] {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #0a6b71;
+  margin-right: 0px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.checkboxes input[type="checkbox"]:checked {
+  background-color: #0a6b71;
+}
+
+.checkboxes label {
+  margin-left: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* ~~~~~~~~~~ DATA VISUALISATION / SKILLS PAGE 2 ~~~~~~~~~~ */
+/* styles for the data visualisation page */
+
+.background-mine-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250vh;
+  z-index: -1;
+}
+
+.background-mine-two img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.award {
+  margin-top: 70px;
+}
+
+/* ~~~~~~~~~~ PROJECT MANAGEMENT / SKILLS PAGE 4 ~~~~~~~~~~ */
+/* styles for the project management case study page */
+
+/* home button nav bar */
+.home-button {
+  z-index: 3;
+}
+
+.skill-four .nav-bar {
+  justify-self: flex-start;
+}
+.skill-four {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.case_study {
+  max-width: 80%;
+  height: auto;
+  z-index: 2;
+  position: relative;
+  top: 100px;
+}
+
+.background-mine {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-repeat: repeat;
+  z-index: 1;
+}
+
+.background-mine img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
