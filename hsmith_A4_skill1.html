@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- This is HTML5 the latest version-->
+<html lang="en">
+  <head>
+    <!-- This page contains the fictitious mining company home page showing my web development skills. Hannah Smith MAY 19 2024 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Adding this metatag means the website will be responsive and scale for cross browser compatibility (W3Schools (2024))-->
+    <meta name="Hannah's Project" content="Mining Site" />
+    <meta name="Assignment 4" content="Web Dev" />
+    <title>Web Development Skill Page</title>
+    <link rel="icon" type="image/ico" href="IMAGES/favicon.ico" />
+    <link rel="stylesheet" href="CSS/defaultstyle.css" />
+  </head>
+  <body>
+    <!-- Home button in nav bar -->
+    <header class="nav-bar">
+      <div class="home-button">
+        <nav>
+          <ul>
+            <li><a href="index.html" class="left-buttons">HOME</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- main content section -->
+    <div class="header-container">
+      <!-- company logo for Greenthumb mining -->
+      <div class="logo1">
+        <img src="IMAGES/logowhite.png" alt="company logo" />
+      </div>
+      <!-- button to sign up to newsletter - links to internal html page -->
+      <div class="link-button">
+        <a href="hsmith_A4_signup.html">NEWSLETTER SIGNUP</a>
+      </div>
+      <!-- Blog section with external links -->
+      <div class="blog">
+        <div class="column-group">
+          <!-- link to mining news -->
+          <div class="column">
+            <a
+              href="https://www.energymining.sa.gov.au/industry/minerals-and-mining/mining"
+            >
+              <img
+                src="IMAGES/conservation.png"
+                alt="conservation blog image"
+              />
+            </a>
+          </div>
+          <!-- link to conservation information -->
+          <div class="column">
+            <a
+              href="https://business.gov.au/grants-and-programs/major-project-status/current-major-projects"
+            >
+              <img src="IMAGES/projects.png" alt="projects link image"
+            /></a>
+          </div>
+          <!-- link to jobs in mining -->
+          <div class="column">
+            <a href="https://www.seek.com.au/jobs-in-mining-resources-energy">
+              <img src="IMAGES/careers.png" alt="careers image link"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="skill-one">
+        <!-- video that autoplays when page opens or text to say it is not working -->
+        <video autoplay loop muted id="background_video">
+          <source src="IMAGES/quarry.mp4" type="video/mp4" />
+          Browser does not support this video.
+        </video>
+      </div>
+    </div>
+    <!-- link to js file -->
+    <script src="script.js"></script>
+  </body>
+</html>

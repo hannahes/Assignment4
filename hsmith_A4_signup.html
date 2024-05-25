@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- This is HTML5 the latest version-->
+<html lang="en">
+  <!-- head section -->
+  <head>
+    <!-- This page contains the newsletter sign up form for the fictitous mining company. Hannah Smith MAY 19 2024 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Hannah's Project" content="Sign Up Form" />
+    <meta name="Assignment 4" content="Sign Up Form" />
+    <title>Comany Sign up form</title>
+    <!--  Company favicon. The favicon shows an icon in the web page tab (Sorrentino (2024) -->
+    <link rel="icon" type="image/ico" href="IMAGES/favicon.ico" />
+    <!-- link to external stylesheet -->
+    <link rel="stylesheet" href="CSS/defaultstyle.css" />
+  </head>
+  <!-- body content. Onload refers to a js function -->
+  <body class="quarry_background" onload="testscript()">
+    <!-- Home navigation button -->
+    <header class="nav-bar">
+      <div class="home-button">
+        <nav>
+          <ul>
+            <li><a href="index.html" class="left-buttons">HOME</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Form content, background, image, text entry etc -->
+    <div class="form_background">
+      <div class="left-side-form">
+        <div class="form-image">
+          <img src="IMAGES/lineart.png" alt="company form image" />
+          <textarea
+            class="textarea"
+            id="textarea"
+            placeholder="Enter your text here"
+            cols="60"
+            rows="10"
+          ></textarea>
+        </div>
+      </div>
+      <div class="right-side-form">
+        <div class="form-text">
+          <img
+            src="IMAGES/logowhite.png"
+            alt="logo image"
+            class="green_thumb_logo"
+          />
+          <h2 class="news-heading">Newsletter Signup</h2>
+          <!-- form with a url to submit data & max text input of 60char -->
+          <form
+            id="signupForm"
+            action="http://csusap.csu.edu.au/cgi-bin/echo_form"
+            method="post"
+          >
+            <input
+              type="text"
+              class="first-name-input"
+              id="firstNameInput"
+              placeholder="First Name"
+              required
+              maxlength="60"
+            />
+            <input
+              type="text"
+              class="lastname-input"
+              id="lastNameInput"
+              placeholder="Last Name"
+              required
+              maxlength="60"
+            />
+            <input
+              type="text"
+              class="email-input"
+              id="emailInput"
+              placeholder="Email Address"
+              required
+              maxlength="60"
+            />
+            <!-- radio buttons for selecting age group -->
+            <div class="radio-buttons">
+              <input
+                type="radio"
+                id="age15-25"
+                class="radio-style"
+                name="ageRange"
+                value="15-25"
+              />
+              <label for="age15-25" class="radio-label">Age 15 to 25</label>
+              <input
+                type="radio"
+                id="age26-35"
+                class="radio-style"
+                name="ageRange"
+                value="18-24"
+              />
+              <label for="age26-35" class="radio-label">Age 26 to 35</label>
+              <input
+                type="radio"
+                id="age36-45"
+                class="radio-style"
+                name="ageRange"
+                value="25-34"
+              />
+              <label for="age36-45" class="radio-label">Age 36 to 45</label>
+              <input
+                type="radio"
+                id="age46-55"
+                class="radio-style"
+                name="ageRange"
+                value="35-44"
+              />
+              <label for="age46-55" class="radio-label">Age 46 to 55</label>
+              <input
+                type="radio"
+                id="ageOver56"
+                class="radio-style"
+                name="ageRange"
+                value="45 and over"
+              />
+              <label for="ageOver56" class="radio-label">56 and over</label>
+            </div>
+            <!-- Checkboxes for selecting newlsetter options  -->
+            <div class="checkboxes">
+              <h3 class="newsletterOptions">
+                Select the newsletters you are interested in
+              </h3>
+              <input type="checkbox" id="checkbox1" name="option1" />
+              <label for="checkbox1">Mine Site News</label>
+              <input type="checkbox" id="checkbox2" name="option2" />
+              <label for="checkbox2">Partner News</label>
+              <input type="checkbox" id="checkbox3" name="option3" />
+              <label for="checkbox3">Future Development News</label>
+              <input type="checkbox" id="checkbox4" name="option4" />
+              <label for="checkbox4">Safety News</label>
+              <input type="checkbox" id="checkbox5" name="option5" />
+              <label for="checkbox5">Christmas Closures</label>
+            </div>
+            <div class="buttonsContainer">
+              <button type="button" id="resetButton">Reset</button>
+              <button type="button" id="signupButton">Signup</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div></div>
+    <!-- link to extern js file -->
+    <script src="script.js"></script>
+  </body>
+</html>
